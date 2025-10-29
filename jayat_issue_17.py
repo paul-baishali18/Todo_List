@@ -2,7 +2,7 @@
 
 import time
 
-text = "Python makes coding fun and powerful."
+text = "python makes coding fun and powerful"
 print("Type this:\n", text)
 input("Press Enter when ready...")
 
