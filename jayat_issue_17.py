@@ -1,8 +1,8 @@
-# Typing speed tester 
+#typing speed and accuracy test
 
 import time
 
-text = "python makes coding fun and powerful"
+text = "Python makes coding fun and powerful."
 print("Type this:\n", text)
 input("Press Enter when ready...")
 
@@ -15,7 +15,6 @@ words = len(typed.split())
 wpm = words / (elapsed / 60)
 accuracy = sum(1 for a, b in zip(typed, text) if a == b) / len(text) * 100
 
-print("\nTime: ", f"{elapsed:.2f}", "s")
-print("WPM: ", f"{wpm:.2f}")
-print("Accuracy: ", f"{accuracy:.2f}", "%")
-
+print(f"\nTime: {elapsed:.2f}s")
+print(f"WPM: {wpm:.2f}")
+print(f"Accuracy: {accuracy:.2f}%")
